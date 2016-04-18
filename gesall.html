@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>Gesällprov Olivia Lennerö</title>
+	<meta name="description" content="Gesällprov">
+	<meta name="author" content="Olivia Lennerö">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/gesall.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/gesall.js"></script>
+</head>
+
+<body>
+	<!-- DISPLAYS AT START -->
+  	<div id="start">
+	  	<h1 class="haps" id="hapsStart">haps</h1>
+	  	<p>keep track on what's up</p>
+  	</div>
+
+  	<header>
+		<h3 class="haps">haps</h3>
+	</header>
+
+  	<!-- MAIN PAGE -->
+   	<div class="mainpg">
+		<div class="eventpg">
+			<ul id="tabs">
+				<li><a href="#pan1">Today</a></li>
+				<li><a href="#pan2">This week</a></li>
+				<li><a href="#pan3">All</a></li>
+				<li><a href="#pan4">Add Event</a></li>
+			</ul>
+
+	   		<div class="panCont">
+
+	   			<!-- PAN 1. EVENTS TODAY -->
+	   			<div class="pan" id="pan1">
+	   				<ul id="eventsToday" class="events">
+	   					
+	   				</ul>
+	   			</div>
+
+	   			<!-- PAN 2. EVENTS THIS WEEK -->
+	   			<div class="pan" id="pan2">
+	   				<ul id="eventsWeek" class="events">
+	   					
+	   				</ul>
+	   			</div>
+
+	   			<!-- PAN 3. ALL EVENTS -->
+	   			<div class="pan" id="pan3">
+	   				<ul id="allEvents" class="events">
+	   					
+	   				</ul>
+	   			</div>
+
+	   			<!-- PAN 4. FORM FOR ADDING EVENTS-->
+	   			<div class="pan" id="pan4">
+	   				<form id="addEv" method="get" action="php/dbadd.php">
+	   					<fieldset>
+	   						<legend>Add an event</legend>
+	   						<label>Event name:</label>
+	   						<input name="eventName" type="text" required autofocus placeholder="eventName">
+	   						<label>Time for event:</label>
+	   						<input name="eventDate" type="date">
+	   						<input name="eventTime" type="time">
+	   						<label>Event location:</label>
+	   						<input name="eventPlace" type="text" placeholder="Storgatan 12, 131 Stockholm">
+	   						<label>Description:</label>
+	   						<textarea name="eventDesc" rows="6" placeholder="Describe the event..."></textarea>
+	   						<br>
+	   						<input type="submit" value="Add event" name="submit">
+	   						<p id="addok"></p>
+	   					</fieldset>
+	   				</form>
+	   			</div>
+	   		</div>
+		</div>
+	</div>
+	
+	<footer id="foot">
+		<p>copyright by hapsAB. designed by Olivia Lennerö.</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+@font-face {
+    font-family: monaco;
+    src: url(../fonts/Monaco.ttf);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body { 
+    background-image: url("../images/start.jpg");
+    background-attachment: fixed;
+    font-family: monaco, Consolas, monospace;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 4%;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 8%;
+    width: 100%;
+    padding-bottom: 1%;
+    opacity: 0.9;
+    text-align: center;
+    background-color:  #020703;
+}
+
+#logout {
+    position: right;
+}
+
+#start {
+    margin-top: 15%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#start p {
+    color: #fff;
+}
+
+.haps {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    color: #fff;
+}
+
+#hapsStart {
+    font-size: 700%;
+    margin-bottom: 0;
+}
+
+.mainpg {
+    height: 96%;
+    width: 100%;
+    padding-top: 14%;
+   
+}
+
+#tabs {
+    margin: 0;
+    padding: 0;
+}
+
+#tabs li {
+    float: left;
+    list-style: none;
+}
+
+#tabs a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 5px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: solid #020703 1px;
+    border-left: solid #020703 1px;
+    border-right: solid #020703 1px;
+    color: #020703;
+}
+
+#tabs a.link {
+    color: #020703;
+}
+
+#tabs a.visited {
+    color: #020703;
+}
+
+#tabs a.hover {
+    color: #020703;
+}
+
+#tabs a.active {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #020703;
+    border-top: solid 1px #020703;
+    border-left: solid 1px #020703;
+    border-right: solid 1px #020703;
+
+}
+
+.panCont {
+    background-color: rgba(255, 255, 255, 0.6);
+    clear: left;
+    border: solid 1px #020703;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pan {
+    width: 70%;
+    padding: 5%;
+    margin-bottom: 5%;
+
+}
+
+.eventpg {
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+
+.events {
+    width: 95%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15%;
+}
+
+.events li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: solid black 1px;
+}
+
+.events h4, button {
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 0;
+
+}
+
+.events button {
+    float: right;
+    margin-top: 10px;
+}
+
+
+.going {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #36c9ff));
+    background:-moz-linear-gradient(top, #33bdef 5%, #36c9ff 100%);
+    background:-webkit-linear-gradient(top, #33bdef 5%, #36c9ff 100%);
+    background:-o-linear-gradient(top, #33bdef 5%, #36c9ff 100%);
+    background:-ms-linear-gradient(top, #33bdef 5%, #36c9ff 100%);
+    background:linear-gradient(to bottom, #33bdef 5%, #36c9ff 100%);
+    border-radius: 6px;
+    border:1px solid #057fd0;
+    color:#ffffff;
+    padding: 3px;
+
+}
+
+.ngoing {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7375), color-stop(1, #a7b1b5));
+    background:-moz-linear-gradient(top, #6c7375 5%, #a7b1b5 100%);
+    background:-webkit-linear-gradient(top, #6c7375 5%, #a7b1b5 100%);
+    background:-o-linear-gradient(top, #6c7375 5%, #a7b1b5 100%);
+    background:-ms-linear-gradient(top, #6c7375 5%, #a7b1b5 100%);
+    background:linear-gradient(to bottom, #6c7375 5%, #a7b1b5 100%);
+    border-radius: 6px;
+    border:1px solid #464e52;
+    color:#ffffff;
+    padding: 3px;
+
+}
+
+#addEv {
+    margin-left: 15%;
+
+}
+
+footer {
+    background-color: #020703;
+    height: 5%;
+    width: 100%;
+    color: white;
+    position: fixed;
+    bottom: 0%;
+    margin: 0;
+    overflow: hidden;
+    font-size: 0.7em;
+}
+
+footer p {
+    padding-left: 3px;
+}
+
+#foot a:link {
+    color: #ffffff;
+}
+
+#foot a:visited {
+    color: #ffffff;
+}
+
+#foot a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#foot a:active {
+    color: #ffffff;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: solid 1px #020703;
+}
+
+form label, form button {
+    display: block;
+    margin-top: 5px;
+}
+
+.butfont {
+    font-family: "museo", serif;
+}
